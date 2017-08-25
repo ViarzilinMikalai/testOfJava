@@ -16,7 +16,7 @@ public class IntersectionOfSegments {
 		String[] tempString1 = inputString1.split("\\s+|,\\s*");
 		String[] tempString2 = inputString2.split("\\s+|,\\s*");
 		/**
-		From the arrays we get the variables to калькулате  and convert them to int 
+		From the arrays we get the variables to calculate  and convert them to int 
 		*/
 		int ax1 = Integer.parseInt(tempString1[0]);
 		int ay1 = Integer.parseInt(tempString1[1]);

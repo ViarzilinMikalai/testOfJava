@@ -19,20 +19,25 @@ public class FibonacciSeries {
 		}
 		return m;
 	}
+	
+	public static long getFib(int num){
+		if (num<=1){
+			return num;
+		} else{
+			return getFib(num-2)+getFib(num-1);
+		}
+	};
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		int a=0;
-		int b=1;
-		int number=enterNumbers();
-		int fibonacciNumber = 1;
-		System.out.print("Prime numbers from 1 to " + number + ": ");
-		while(fibonacciNumber <= number){
-		     System.out.print( fibonacciNumber + ", ");
-		     fibonacciNumber = a + b;
-		     a = b;
-		     b = fibonacciNumber;
-		}
-	}
 
+		int n=enterNumbers();
+		int i=1;
+		while(getFib(i)<=n){
+			System.out.print(getFib(i) + " ");
+			i++;
+		};
+	}
 }
+
+
